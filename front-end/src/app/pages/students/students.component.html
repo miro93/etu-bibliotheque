@@ -1,0 +1,22 @@
+<div class="students-card card m-3">
+  <button mat-flat-button type="button" class="m-3" (click)="openStudentDialog()">Ajouter</button>
+  <table mat-table matSort [dataSource]="dataSource" class="student-table mat-elevation-z8">
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef>Prénom</th>
+      <td mat-cell *matCellDef="let s">{{ s.firstName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Nom</th>
+      <td mat-cell *matCellDef="let s">{{ s.lastName }}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="email">
+      <th mat-header-cell *matHeaderCellDef>Email</th>
+      <td mat-cell *matCellDef="let s">{{ s.email }}</td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="studentsTableColumns"></tr>
+    <tr mat-row *matRowDef="let s; columns: studentsTableColumns" (click)="openStudentDialog(s)"></tr>
+  </table>
+</div>

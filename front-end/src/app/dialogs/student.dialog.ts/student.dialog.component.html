@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>{{ data.student ? 'Etudiant numéro ' + data.student.id : 'Nouvel étudiant' }}</h1>
+<form [formGroup]="studentForm" (ngSubmit)="onSubmit()">
+  <div mat-dialog-content class="student-form">
+    <mat-form-field>
+      <mat-label>Prénom</mat-label>
+      <input matInput formControlName="firstName"/>
+      <mat-error>Le prénom est obligatoire</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Nom</mat-label>
+      <input matInput formControlName="lastName"/>
+      <mat-error>Le nom est obligatoire</mat-error>
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email"/>
+      <mat-error>Un email valide est obligatoire</mat-error>
+    </mat-form-field>
+    @if (errorMessage) {
+      <mat-error>{{ errorMessage }}</mat-error>
+    }
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button type="submit">{{ data.student ? 'Modifier' : 'Ajouter' }}</button>
+    @if (data.student) {
+      <button mat-button type="button" (click)="onDeleteClick()">Supprimer</button>
+    }
+  </div>
+</form>
