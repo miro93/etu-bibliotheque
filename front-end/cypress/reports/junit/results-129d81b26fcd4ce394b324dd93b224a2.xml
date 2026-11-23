@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="1.346" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-11-23T10:47:01" tests="0" file="cypress/e2e/login.cy.ts" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Login" timestamp="2026-11-23T10:47:01" tests="3" time="1.345" failures="0">
+    <testcase name="Login shows the required errors when the form is submitted empty" time="0.435" classname="shows the required errors when the form is submitted empty">
+    </testcase>
+    <testcase name="Login stays on the login page when the credentials are refused" time="0.457" classname="stays on the login page when the credentials are refused">
+    </testcase>
+    <testcase name="Login logs in then displays the students" time="0.407" classname="logs in then displays the students">
+    </testcase>
+  </testsuite>
+</testsuites>

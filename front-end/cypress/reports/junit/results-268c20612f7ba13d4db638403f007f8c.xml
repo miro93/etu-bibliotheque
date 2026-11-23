@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="3.397" tests="9" failures="0">
+  <testsuite name="Root Suite" timestamp="2026-11-23T10:47:05" tests="0" file="cypress/e2e/students.cy.ts" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Students" timestamp="2026-11-23T10:47:05" tests="9" time="3.397" failures="0">
+    <testcase name="Students redirects an anonymous visitor to the login page" time="0.265" classname="redirects an anonymous visitor to the login page">
+    </testcase>
+    <testcase name="Students redirects to the login page when the session has expired" time="0.112" classname="redirects to the login page when the session has expired">
+    </testcase>
+    <testcase name="Students lists the students" time="0.085" classname="lists the students">
+    </testcase>
+    <testcase name="Students adds a student" time="0.711" classname="adds a student">
+    </testcase>
+    <testcase name="Students refuses an invalid student" time="0.385" classname="refuses an invalid student">
+    </testcase>
+    <testcase name="Students tells when the email is already used" time="0.640" classname="tells when the email is already used">
+    </testcase>
+    <testcase name="Students edits a student" time="0.475" classname="edits a student">
+    </testcase>
+    <testcase name="Students deletes a student after confirmation" time="0.335" classname="deletes a student after confirmation">
+    </testcase>
+    <testcase name="Students keeps the student when the confirmation is refused" time="0.270" classname="keeps the student when the confirmation is refused">
+    </testcase>
+  </testsuite>
+</testsuites>
