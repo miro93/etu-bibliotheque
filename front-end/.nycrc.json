@@ -1,0 +1,7 @@
+{
+  "report-dir": "../rapports/front-end-cypress",
+  "reporter": ["html", "text", "text-summary"],
+  "include": ["src/app/**"],
+  "exclude": ["**/*.spec.ts"],
+  "exclude-after-remap": true
+}
